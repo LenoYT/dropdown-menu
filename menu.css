@@ -1,0 +1,49 @@
+:root {
+    --bg-color: rgb(59, 59, 59);
+}
+
+#root {
+    color: rgb(230, 230, 230);
+    background-color: var(--bg-color);
+}
+
+/*- - MENU SETTINGS - -*/
+
+.project-info {
+    font-size: larger;
+}
+
+.menu {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.menu .dropdown {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.menu .menu-button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.menu .menu-icons {
+    display: grid !important;
+}
+
+.menu .dropdown-element {
+    text-decoration: none !important;
+    color: white !important;
+    margin-top: 2px;
+    border: 2px;
+}
+
+.menu .menu-button:focus-within .dropdown {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
